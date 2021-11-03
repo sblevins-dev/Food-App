@@ -1,3 +1,5 @@
+import burgers from "../images/burger.jpg"
+
 const Recipes = ({ recipes }) => {
 
     return (
@@ -5,9 +7,9 @@ const Recipes = ({ recipes }) => {
             <h2>Burgers</h2>
             <div className="recipe-list">
             {recipes.map((recipe) => (
-                <div className="recipe-view" key={recipe.id}>
+                <div className="recipe-view" style={{backgroundImage: `url(${burgers})`, backgroundSize: 'cover'}} key={recipe.id}>
                     <h2>{recipe.name}</h2>
-                    <p>{recipe.ingredients}</p>
+                    <p>{recipe.description}</p>
                 </div>
             ))}
             </div>
