@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Featured from "./components/Featured";
-import Categories from "./components/Categories";
+import Main from "./components/Main";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         </Switch>
       </Router>
       <Featured />
-      <Categories />
+      <Main />
     </div>
   );
 }
